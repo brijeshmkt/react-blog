@@ -9,13 +9,17 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import { createStore } from 'redux';
 import reducer from './reducer/Index';
 
+import PostsNew  from './components/posts_new';
+
 const store = createStore(reducer);
 
 const app = (
     <Provider store={store}>
         <BrowserRouter>
             <Switch>
+                <Route path="/new" component={PostsNew} />
                 <Route path="/" component={App} />
+
             </Switch>
         </BrowserRouter>
     </Provider>
