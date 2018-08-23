@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-
+import PostIndex from './Posts_index';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        Hello World
+      <div>
+        <p>Hello World</p>
+        <PostIndex />
       </div>
     );
   }
